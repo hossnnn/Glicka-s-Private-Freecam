@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "privatefreecam",
+	"version": "${version}",
+	"name": "Glicka's Private Freecam",
+	"description": "Client-side spectator-style freecam. Moves only the camera; the server sees a stationary player.",
+	"authors": [
+		"You"
+	],
+	"license": "All-Rights-Reserved",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.privatefreecam.client.FreecamMod"
+		]
+	},
+	"mixins": [
+		{
+			"config": "privatefreecam.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
